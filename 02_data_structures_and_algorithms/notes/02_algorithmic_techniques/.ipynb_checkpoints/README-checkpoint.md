@@ -10,20 +10,21 @@ The process of traversing a data structure to visit its elements. This is about 
 Moving sequentially through elements.
 
 ##### 1. Single-Pointer
-    Using a single index or reference to move one element at a time (e.g., for loop on an array).
+Using a single index or reference to move one element at a time (e.g., for loop on an array).
+
 ##### 2. Multi-Pointer
-    Using two or more indices or references to move through the data simultaneously. A classic example of this is the two-pointer technique used in arrays to examine them from opposite directions for a specific condition. Another example is the use of fast and slow pointers in a linked list to detect a cycle or find the middle element. Other examples include low and high indices in a binary search.
+Using two or more indices or references to move through the data simultaneously. A classic example of this is the two-pointer technique used in arrays to examine them from opposite directions for a specific condition. Another example is the use of fast and slow pointers in a linked list to detect a cycle or find the middle element. Other examples include low and high indices in a binary search.
 
 #### ii. Non-Linear Navigation.
 Moving through hierarchical or networked structures.
 
 ##### 1. Hierarchical Traversal
-
 Moving between a parent and its children (e.g., traversing a tree). This is the underlying principle for algorithms like Depth-First Search (DFS) and Breadth-First Search (BFS), which use auxiliary data structures to manage the order of traversal.
 
 ##### 2. Network Traversal
+Moving between interconnected nodes in a graph. The key here is that a node can have multiple neighbors without a strict parent-child relationship.
 
-Moving between interconnected nodes in a graph. The key here is that a node can have multiple neighbors without a strict parent-child relationship. Algorithms like Breadth-First Search (BFS) and Depth-First Search (DFS) are strategies that use a queue or stack (auxiliary data structures) to manage the exploration order, ensuring all nodes are visited even in the presence of cycles.
+    Examples: Algorithms like Breadth-First Search (BFS) and Depth-First Search (DFS) are strategies that use a queue or stack (auxiliary data structures) to manage the exploration order, ensuring all nodes are visited even in the presence of cycles.
 
 ### b. Querying 🔎
 The act of asking a question about the data and getting an answer about the structure of the ADT itself, often a boolean or a specific value.
