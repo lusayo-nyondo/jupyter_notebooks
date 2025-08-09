@@ -1,9 +1,17 @@
 {
  "cells": [
   {
+   "cell_type": "markdown",
+   "id": "f9f58482-cde6-4249-9538-abc2401c42b4",
+   "metadata": {},
+   "source": [
+    "This folder contains implementations of abstract data types as per the standard."
+   ]
+  },
+  {
    "cell_type": "code",
    "execution_count": null,
-   "id": "b2465f1d-f6a3-498e-8b2e-8fda6317d5ee",
+   "id": "0ab14f76-70dd-43ca-b28c-d3ef82cb1973",
    "metadata": {},
    "outputs": [],
    "source": []
