@@ -1,9 +1,13 @@
-# Algorithmic Techniques In a NutShell
+# Algorithmic Techniques
+
+This is the mental model for algorithmic techniques. This taxonomy is not a set of mutually exclusive boxes but rather a tiered system of abstraction for intuitive understanding. Let's get into algorithmic techniques.
+
+An algorithm is an ordered set of fundamental operations orchestrated by high-level strategies to produce a new value or state.
 
 ## 1. Fundamental Operations
 These are the basic, atomic actions you perform on data. Think of them as the verbs of algorithms. hey fall into three major categories: Navigation, Querying, and Computation. Let's get into a bit more detail:
 
-### a. Navigation 🧭
+### a. Navigation
 The process of traversing a data structure to visit its elements. This is about movement and access.
 
 #### i. Linear Navigation
@@ -28,8 +32,18 @@ Moving between interconnected nodes in a graph. The key here is that a node can 
 
 ### b. Querying 🔎
 The act of asking a question about the data and getting an answer about the structure of the ADT itself, often a boolean or a specific value.
-    
-    Examples: contains(element), isEmpty(), size(), min(), max(), elementAt(index), subset(start:finish). These are operations that inspect the data without changing it.
+
+There are two types of queries:
+
+#### i. Direct Queries (Stored Properties)
+These are queries that rely on a pre-existing property of the data structure. You don't need to traverse or compute anything to get the answer; you just "look it up." This is your most efficient type of query.
+
+Examples: Getting the size of an array, the head of a linked list, or the value at a specific index in a hash map.
+
+#### ii. Computed Queries
+These are queries that require some form of navigation or computation to get an answer. The result isn't stored, so it must be calculated on demand. A lot of optimization problems fall squarely within implementing these operations.
+
+Examples: contains(element) on an unsorted array (requires navigation), min() or max() on a linked list (requires navigation), or checking if a number is prime (requires computation).
 
 ### c. Computation ⚙️
 The process of deriving a new value or a new data structure from the existing data. We can break this down based on how the computation's logic is determined.
@@ -40,12 +54,12 @@ This is the most foundational form of computation. It uses the computer's circui
     Examples: Arithmetic operations (+, -, *, /), logical operations (AND, OR, NOT), and comparisons (=, <, >): i.e. 1 + 1 = 2, True AND False = False, etc.
 
 #### ii. Algorithmic Computation
-This is a computation technique where we as programmers define a fixed, predetermined set of steps to produce a result. The logic is straightforward and doesn't involve a complex decision-making process at each step.
+This is a computation technique where we as programmers define a fixed, predetermined set of steps to produce a result. The logic is straightforward and doesn't involve a complex decision-making process at each step. Note that algorithmic computations can also contain heuristics (spot-decisions for attempting to achieve the best outcome).
 
 Examples: sum(array), average(array), merge(list1, list2). The instructions are clear and the same every time.
 
 #### iii. Heuristic Computation
-This is a computation techniques that involves a navigating a data structure and executing some decision-making process at each step to determine whether or not to change the result of the computation. The algorithm doesn't just follow a fixed script and gives a deterministic answer; it makes a choice based on a specific rule or heuristic. General subcategories of this include:
+This is a computation technique that involves a navigating a data structure and executing some decision-making process at each step to determine whether or not to change the result of the computation. The algorithm doesn't just follow a fixed script and gives a deterministic answer; it makes a choice based on a specific rule or heuristic. General subcategories of this include:
 
 ##### 1. Greedy algorithms.
 
@@ -63,22 +77,13 @@ How it Works: The algorithm maintains a "population" of potential solutions. In 
 
 ## 2. Implementation Strategies for Querying, Computation, and Navigation
 
-These are the actual strategies that we use when writing implementations for algorithms. Think of them as high-level strategies, with some well-known techniques for performing queries, computing values, or navigating a data structure.
-
-There are generally three techniques to implementing complex algorithms on data structures: Simple operations using stored properties of the data structure, using precomputation, and using iterative refinement. Let's get into a bit more detail about what we mean:
-
-### a. Stored properties
-This strategy leverages the data structure's known pre-defined properties to perform a query or computation.
-
-    Example: The size of an array, the head of a linked list, the "next" pointer of a linked list node, etc. Also getting the pointer for a particular index of the array using pointer arithmetic could be an example (because we know the array's size, and we know the index of the element we want, and the size of each individual element slot, so we can calculate the pointer of the element we want to fetch).
-
-### b. Precomputation ✨
+### a. Precomputation
 The strategy of navigating through your data structure in an initial pass to make a new, different, and optimized ADT that you will then use for further processing.
 
     Example: Creating a hash table from a list of keys to enable near-constant-time queries. Another example is building a prefix sum array to allow for constant-time range sum queries. The act of creating the new data structure is the precomputation. Intervals also fall within this category. The intervals problem is a class of problems often solved by sorting the intervals (a form of precomputation) and then iterating through them to merge or find overlaps.
     
-### c. Iterative Refinement 🔬
-This is a problem-solving strategy where you repeatedly apply computations on small portions of your dataset to narrow down a solution. It only operates on the ADT in question and uses some data structure to store intermediate results. It falls into two major implementation categories:
+### b. Iterative Refinement
+This is a problem-solving strategy where you repeatedly apply queries and computations on small portions of your dataset to narrow down a solution. It only operates on the ADT in question and uses some data structure to store intermediate results. It falls into two major implementation categories:
 
 #### i. Iterative Method (Looping)
 This is where you use a standard loop to repeatedly refine the solution. Intermediate results or the state of the algorithm are stored explicitly by you in standard variables or data structures like arrays, queues, or hash maps. This approach gives you full control over the state management.

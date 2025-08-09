@@ -1,0 +1,109 @@
+1. Sorting Algorithms
+01_bubble_sort 02_selection_sort 03_insertion_sort
+04_merge_sort 05_quick_sort 06_heap_sort
+07_counting_sort 08_radix_sort 09_bucket_sort
+
+2. Searching Algorithms
+10_linear_search 11_binary_search 12_ternary_search
+
+3. Graph Algorithms
+13_breadth_first_search 14_depth_first_search 15_dijkstra's_algorithm
+16_a_star_search 17_bellman_ford_algorithm 18_spanning_tree_algorithms
+19_prim's_algorithm 20_kruskal's_algorithm 21_tarjan's_algorithm
+22_floyd_warshall_algorithm 23_johnson's_algorithm 24_edmonds_karp_algorithm
+25_dinic's_algorithm 26_isomorphism_algorithms 27_ford_fulkerson_algorithm
+28_kosaraju's_algorithm
+
+4. Dynamic Programming
+29_fibonacci_sequence 30_knapsack_problem 31_coin_change_problem
+32_longest_common_subsequence 33_longest_increasing_subsequence 34_edit_distance
+35_matrix_chain_multiplication 36_all_pairs_shortest_path
+
+5. Greedy Algorithms
+37_activity_selection 38_huffman_coding 39_job_scheduling_problem
+
+6. String Algorithms
+40_kmp_algorithm 41_rabin_karp_algorithm 42_z-algorithm
+43_manacher's_algorithm
+
+7. Backtracking Algorithms
+44_n_queens_problem 45_sudoku_solver 46_combination_sum
+47_permutations
+
+8. Miscellaneous Algorithms
+48_union_find 49_kadane's_algorithm 50_sieve_of_eratosthenes
+51_fast_fourier_transform 52_fisher-yates_shuffle 53_reservoir_sampling
+
+9. Computational Geometry
+54_graham_scan 55_jarvis_march 56_quickhull
+57_delaunay_triangulation 58_chan's_algorithm 59_bentley-ottmann_algorithm
+60_lloyd's_algorithm
+
+10. Numerical and Linear Algebra
+61_newton's_method 62_gaussian_elimination 63_gauss-jordan_elimination
+64_lu_decomposition 65_strassen's_algorithm 66_karatsuba_algorithm
+67_cooley-tukey_algorithm
+
+11. Cryptography and Hashing
+68_diffie-hellman_key_exchange 69_rsa_algorithm 70_aes
+71_merkle_trees 72_sha-256 73_siphash
+74_blum_blum_shub 75_keccak-256
+
+12. Distributed Systems
+76_paxos_algorithm 77_raft_algorithm 78_gossip_protocol
+79_consistent_hashing 80_two-phase_commit_protocol 81_proof_of_work
+82_proof_of_stake
+
+13. Heuristic and Approximation Algorithms
+83_simulated_annealing 84_genetic_algorithms 85_ant_colony_optimization
+86_particle_swarm_optimization 87_metropolis-hastings_algorithm 88_traveling_salesman_problem_approximation
+89_monte_carlo_algorithms 90_las_vegas_algorithms
+
+14. Quantum Computing
+91_shor's_algorithm 92_grover's_algorithm 93_deutsch-jozsa_algorithm
+94_quantum_annealing 95_quantum_phase_estimation
+
+15. Bioinformatics
+96_needleman-wunsch_algorithm 97_smith-waterman_algorithm 98_viterbi_algorithm
+99_blast 100_baum-welch_algorithm
+
+16. Optimization Algorithms
+101_simplex_algorithm 102_hungarian_algorithm 103_expectation-maximization_algorithm
+
+17. Finance Algorithms
+104_black_scholes_model 105_capm
+
+18. Machine Learning Algorithms
+106_k-means_clustering 107_support_vector_machines 108_decision_trees
+109_random_forests 110_gradient_boosting_machines 111_principal_component_analysis
+112_alpha-beta_pruning 113_reinforcement_learning
+
+19. E-commerce and Advertising
+114_collaborative_filtering 115_dynamic_pricing 116_vickrey-clarke-groves_auction
+117_real_time_bidding
+
+20. Transportation and Logistics
+118_vehicle_routing_problem 119_supply_chain_optimization 120_route_optimization_with_constraints
+
+21. Healthcare and Medicine
+121_marching_cubes_algorithm 122_active_contour_models 123_protein_folding_prediction
+
+22. Energy and Utilities
+124_newton-raphson_power_flow 125_economic_dispatch_algorithm 126_unit_commitment_algorithm
+
+23. Robotics and Control Systems
+127_kalman_filter 128_pid_controller 129_rrt
+
+24. Computer Vision
+130_sift 131_hog 132_canny_edge_detection
+
+25. Computer Graphics
+133_dda_line_drawing_algorithm 134_bresenham's_line_algorithm 135_midpoint_circle_algorithm
+136_sutherland-hodgman_algorithm
+
+26. Compiler and Parsing
+137_earley_parser 138_lr_parser 139_cyk_algorithm
+
+27. Data Compression
+140_shannon-fano_coding 141_lzw_compression 142_huffman_coding_variant
+143_run_length_encoding

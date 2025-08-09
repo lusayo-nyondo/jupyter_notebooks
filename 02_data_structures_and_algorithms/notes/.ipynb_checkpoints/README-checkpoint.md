@@ -1,67 +1,59 @@
-# The Index-Pointer Approach to an Intuitive Understanding of Data Structures and Algorithms
-
-These are my notes and exercises on my own mental model for data structures and algorithms. This mental model provides a conceptual framework for understanding data structures and algorithms, designed to build intuition before delving into formal analysis. The core idea is to organize all related concepts into a clear, hierarchical taxonomy.
+# The Index-Pointer Approach to Data Structures and Algorithms
+This mental model provides an intuitive, hierarchical taxonomy for understanding data structures and algorithms. The core idea is to build a conceptual framework from the ground up, starting with low-level data models and progressing to high-level algorithmic strategies.
 
 ## 1. Foundational Data Models
-The most fundamental concept is the Data Model, which defines how a computer groups related items. There are two primary types:
+At the lowest level, all data is organized using one of two fundamental models.
 
-### a. Index-Based Data Models.
-A data model where the size is fixed and known beforehand. The position of an element can be inferred directly from its index. The primary operation is random access, allowing you to retrieve any element in constant time. A classic example is an array.
+### Index-Based Data Models:
+Data is stored in a contiguous block of memory. The size is fixed, and elements can be accessed instantly (random access) by their position (index). The quintessential example is an array.
 
-### b. Pointer-Based Data Models.
-A data model where the size is not known until all elements are inspected. An element's position can only be inferred by following a link or "pointer" from a previous element. The primary operation is sequential access, which requires traversing the structure from a starting point. A classic example is a linked list.
+### Pointer-Based Data Models:
+Data is stored non-contiguously. The size is dynamic, and elements are accessed sequentially by following "pointers" from one element to the next. The classic example is a linked list.
 
 ## 2. Abstract Data Types (ADTs)
-An Abstract Data Type (ADT) is a logical representation of a data model. It defines a set of behaviors and constraints on how data is organized and accessed, independent of the underlying implementation. ADTs serve as a contract, specifying what operations are available without revealing how they are performed.
+ADTs are the logical representations of data that abstract away the underlying data model. They define the behavior and rules for a data structure. ADTs are divided into two main categories:
 
-We have two major categories:
+### Linear ADTs:
+Organize data in a sequence, such as arrays, strings, linked lists, stacks, and queues.
 
-### a. Linear ADTs
-
-These organize data in a logical sequence.
-
-    Examples include: Arrays, Strings, Linked Lists: ADTs that model sequential collections of data.
-
-Stacks and Queues: ADTs that enforce specific access patterns (LIFO for stacks, FIFO for queues).
-
-### Non-Linear ADTs
-
-These organize data in a hierarchical or networked fashion.
-
-    Hash Maps and Hash Sets: These ADTs use a hash function to map keys to values, enabling near-constant time lookups.
-    
-    Trees and Heaps: Hierarchical ADTs that model parent-child relationships. Heaps are a specialized tree with a specific ordering property.
-    
-    Graphs: ADTs that model complex networks of interconnected nodes.
+### Non-Linear ADTs:
+Organize data in a hierarchical or networked fashion, such as hash maps, trees, and graphs.
 
 ## 3. Algorithmic Techniques
+An algorithm is an ordered set of fundamental operations orchestrated by high-level strategies to solve a problem.
 
-An Algorithm is an ordered set of computational operations performed on an ADT's underlying data to produce a new value or state. This mental model defines two major categories:
+### a. Fundamental Operations
+These are the three basic, atomic actions of all algorithms:
 
-### a. Fundamental Operations.
+### Navigation
+The process of traversing a data structure to visit its elements. This can be linear (using single or multi-pointers) or non-linear (hierarchical or network traversal).
 
-These are the basic, atomic actions performed on data. These include:
+### Querying
+The act of inspecting data to get an answer. There are two types:
 
-#### i. Navigation.
-The process of traversing a data structure to visit its elements. This can be linear (e.g., using a single pointer on an array) or non-linear (e.g., traversing a tree).
+#### Direct Queries
+Rely on a stored property of the data structure for instant retrieval (e.g., getting the size of an array).
 
-#### ii. Querying.
-The act of inspecting data to get an answer, often a boolean, a specific value, or a range of values.
+#### Computed Queries
+Require navigation or computation to get an answer (e.g., finding an element in an unsorted array).
 
-#### iii. Computation: The process of deriving a new value from existing data, ranging from primitive operations (e.g., 1+1=2) to complex heuristic computations (e.g., greedy algorithms).
+### Computation
+The process of deriving a new value or data structure from existing data. It's broken down by its logic:
 
-### b. Implementation Strategies for Querying, Navigation, and Computation.
+#### Primitive:
+Basic math and logic.
 
-These are technical approaches for performing query, navigation, and computation operations. The goal of these is to gain:
+#### Algorithmic:
+Fixed, predetermined steps (e.g., sum()).
 
-#### i. Stored Properties
+#### Heuristic:
+Decision-making at each step (e.g., a greedy algorithm).
 
-Leveraging inherent properties of the data structure for a quick result (e.g., getting the size of an array).
+### b. Optimization Strategies
+These are the high-level approaches to optimize any sort of algorithm.
 
-#### ii. Precomputation
+#### Precomputation
+Performing work ahead of time to build an optimized ADT, making future operations faster (e.g., sorting an array for a binary search).
 
-Performing work ahead of time to make future operations faster (e.g., sorting an array to prepare for a binary search).
-
-#### iii. Iterative Refinement
-
-A strategy that repeatedly applies computations on a dataset to narrow down a solution, which can be implemented using either an iterative method (e.g., a for loop with explicit state) or a recursive method (e.g., using the call stack for implicit state management).
+#### Iterative Refinement
+A problem-solving strategy that repeatedly applies fundamental operations to narrow down a solution. It can be implemented using an iterative method (loops) or a recursive method (the call stack).
