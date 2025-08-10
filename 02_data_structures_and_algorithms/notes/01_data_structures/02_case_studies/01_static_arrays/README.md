@@ -1,4 +1,5 @@
-Static Array: ADT Definition
+# Static Array: ADT Definition
+
 A Static Array is a foundational, linear ADT. It is defined by its core characteristics and the operations it supports.
 
 1. Underlying Storage Model

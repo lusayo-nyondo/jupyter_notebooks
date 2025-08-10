@@ -1,0 +1,20 @@
+{
+  "LiteBuildConfig": {
+    "apps": [
+      {
+        "name": "lab",
+        "kernel": "deno"
+      }
+    ]
+  }
+}{
+  "LiteBuildConfig": {
+    "apps": [
+      {
+        "name": "lab",
+        "kernel": "deno"
+      }
+    ]
+  }
+}
+

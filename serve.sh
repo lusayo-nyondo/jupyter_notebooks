@@ -1,0 +1,1 @@
+jupyter lite build --XeusAddon.prefix="~/micromamba/envs/xeus-cpp-env"
