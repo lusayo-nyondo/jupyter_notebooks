@@ -1,0 +1,212 @@
+02_data_structures_and_algorithms/
+├── interview_prep
+├── notes
+│   ├── 01_data_structures
+│   │   ├── 01_fundamentals
+│   │   ├── 02_case_studies
+│   │   │   ├── 01_static_arrays
+│   │   │   │   ├── README.md
+│   │   │   │   ├── Untitled.ipynb
+│   │   │   │   ├── c_kernel.ipynb
+│   │   │   │   └── practice
+│   │   │   ├── 02_dynamic_arrays
+│   │   │   │   └── README.md
+│   │   │   ├── 03_singly_linked_lists
+│   │   │   ├── 04_doubly_linked_lists
+│   │   │   ├── 05_circular_linked_lists
+│   │   │   ├── 06_stacks
+│   │   │   ├── 07_queues
+│   │   │   ├── 08_dequeues
+│   │   │   ├── 09_hashtables
+│   │   │   ├── 10_hashmaps
+│   │   │   ├── 11_bloom_filters
+│   │   │   ├── 12_trees
+│   │   │   ├── 13_binary_trees
+│   │   │   ├── 14_binary_search_trees
+│   │   │   ├── 15_avl_trees
+│   │   │   ├── 16_red_black_trees
+│   │   │   ├── 17_splay_trees
+│   │   │   ├── 18_b_trees
+│   │   │   ├── 19_heaps
+│   │   │   ├── 20_fibonacci_heaps
+│   │   │   ├── 21_tries
+│   │   │   ├── 22_ternary_search_trees
+│   │   │   ├── 23_graphs
+│   │   │   ├── 24_directed_graphs
+│   │   │   ├── 25_undirected_graphs
+│   │   │   ├── 26_weighted_graphs
+│   │   │   ├── 27_acyclic_graphs
+│   │   │   ├── 28_bipartite_graphs
+│   │   │   ├── 29_disjoint_set_union
+│   │   │   ├── 30_segment_trees
+│   │   │   ├── 31_fenwick_trees
+│   │   │   ├── 32_skip_lists
+│   │   │   ├── 33_suffix_trees
+│   │   │   ├── 34_suffix_arrays
+│   │   │   ├── 35_k-d_trees
+│   │   │   ├── 36_quadtrees
+│   │   │   ├── 37_octrees
+│   │   │   ├── 38_treaps
+│   │   │   ├── 39_r_trees
+│   │   │   ├── 40_van_emde_boas_trees
+│   │   │   ├── 41_finger_trees
+│   │   │   ├── 42_fusion_trees
+│   │   │   └── 43_persistent_data_structures
+│   │   └── README.md
+│   ├── 02_algorithms
+│   │   ├── 01_fundamentals
+│   │   │   ├── 01_navigation
+│   │   │   ├── 02_querying
+│   │   │   └── 03_computation
+│   │   ├── 02_optimization_strategies
+│   │   │   └── precomputation
+│   │   ├── 03_case_studies
+│   │   │   ├── 01_bubble_sort
+│   │   │   ├── 02_selection_sort
+│   │   │   ├── 03_insertion_sort
+│   │   │   ├── 04_merge_sort
+│   │   │   ├── 05_quick_sort
+│   │   │   ├── 06_heap_sort
+│   │   │   ├── 07_counting_sort
+│   │   │   ├── 08_radix_sort
+│   │   │   ├── 09_bucket_sort
+│   │   │   ├── 100_expectation-maximization_algorithm
+│   │   │   ├── 101_black_scholes_model
+│   │   │   ├── 102_capm
+│   │   │   ├── 103_k-means_clustering
+│   │   │   ├── 104_support_vector_machines
+│   │   │   ├── 105_decision_trees
+│   │   │   ├── 106_random_forests
+│   │   │   ├── 107_gradient_boosting_machines
+│   │   │   ├── 108_principal_component_analysis
+│   │   │   ├── 109_alpha-beta_pruning
+│   │   │   ├── 10_linear_search
+│   │   │   ├── 110_reinforcement_learning
+│   │   │   ├── 111_collaborative_filtering
+│   │   │   ├── 112_dynamic_pricing
+│   │   │   ├── 113_vickrey-clarke-groves_auction
+│   │   │   ├── 114_real_time_bidding
+│   │   │   ├── 115_vehicle_routing_problem
+│   │   │   ├── 116_supply_chain_optimization
+│   │   │   ├── 117_route_optimization_with_constraints
+│   │   │   ├── 118_marching_cubes_algorithm
+│   │   │   ├── 119_active_countour_models
+│   │   │   ├── 11_binary_search
+│   │   │   ├── 120_protein_folding_prediction
+│   │   │   ├── 121_newton-raphson_power_flow
+│   │   │   ├── 122_economic_dispatch_algorithm
+│   │   │   ├── 123_unit_commitment_algorithm
+│   │   │   ├── 124_cyk_algorithm
+│   │   │   ├── 125_earley_parser
+│   │   │   ├── 126_lr_parser
+│   │   │   ├── 127_snannon-fano_coding
+│   │   │   ├── 128_lzw_compression
+│   │   │   ├── 129_huffman_coding_variant
+│   │   │   ├── 12_ternary_search
+│   │   │   ├── 130_run_length_encoding
+│   │   │   ├── 131_dda_line_drawing_algorithm
+│   │   │   ├── 132_bresenham's_line_algorithm
+│   │   │   ├── 133_midpoint_circle_algorithm
+│   │   │   ├── 134_sutherland-hodgman_algorithm
+│   │   │   ├── 135_kalman_filter
+│   │   │   ├── 136_pid_controller
+│   │   │   ├── 137_rrt
+│   │   │   ├── 138_quantum_annealing
+│   │   │   ├── 139_quantum_phase_estimation
+│   │   │   ├── 13_breadth_first_search
+│   │   │   ├── 140_sift
+│   │   │   ├── 141_hog
+│   │   │   ├── 142_canny_edge_detection
+│   │   │   ├── 14_depth_first_search
+│   │   │   ├── 15_dijkstra's_algorithm
+│   │   │   ├── 16_a_star_search
+│   │   │   ├── 17_bellman_ford_algorithm
+│   │   │   ├── 18_spanning_tree_algorithms
+│   │   │   ├── 19_prim's_algorithm
+│   │   │   ├── 20_kruskal's_algorithm
+│   │   │   ├── 21_tarjan's_algorithm
+│   │   │   ├── 22_floyd_warshall_algorithm
+│   │   │   ├── 23_johnson's_algorithm
+│   │   │   ├── 24_endmond's_karp_algorithm
+│   │   │   ├── 25_dinic's_algorithm
+│   │   │   ├── 26_isomorphism_algorithms
+│   │   │   ├── 27_ford_fulkerson_algorithm
+│   │   │   ├── 28_kosaraju's_algorithm
+│   │   │   ├── 29_fibonacci_sequence
+│   │   │   ├── 30_knapsack_problem
+│   │   │   ├── 31_coin_change_problem
+│   │   │   ├── 32_longest_common_subsequence
+│   │   │   ├── 33_longest_increasing_subsequence
+│   │   │   ├── 34_edit_distance
+│   │   │   ├── 35_matrix_chain_multiplication
+│   │   │   ├── 36_all_pairs_shortest_path
+│   │   │   ├── 37_activity_selection
+│   │   │   ├── 38_huffman_coding
+│   │   │   ├── 39_job_scheduling_problem
+│   │   │   ├── 40_kmp_algorithm
+│   │   │   ├── 41_rabin_karp_algorithm
+│   │   │   ├── 42_z-algorithm
+│   │   │   ├── 43_manacher's_algorithm
+│   │   │   ├── 44_n_qneens_problem
+│   │   │   ├── 45_sudoku_solver
+│   │   │   ├── 46_combination_sum
+│   │   │   ├── 47_permutations
+│   │   │   ├── 48_union_find
+│   │   │   ├── 49_kadane's_algorithm
+│   │   │   ├── 50_sieve_of_eratosthenes
+│   │   │   ├── 51_fast_fourier_transform
+│   │   │   ├── 52_graham_scan
+│   │   │   ├── 53_jarvis_march
+│   │   │   ├── 54_quickhull
+│   │   │   ├── 55_delaunay_triangulation
+│   │   │   ├── 56_chan's_algorithm
+│   │   │   ├── 57_bentley-ottmann_algorithm
+│   │   │   ├── 58_lloyd's_algorithm
+│   │   │   ├── 59_newton's_method
+│   │   │   ├── 60_gaussian_elimination
+│   │   │   ├── 61_lu_decomposition
+│   │   │   ├── 63_strassen's_algorithm
+│   │   │   ├── 64_karatrsuba_algorithm
+│   │   │   ├── 65_cooley-tukey_algorithm
+│   │   │   ├── 66_diffie-hellman_key_exchange
+│   │   │   ├── 67_rsa_algorithm
+│   │   │   ├── 68_aes
+│   │   │   ├── 69_merkle_tress
+│   │   │   ├── 70_sha-256
+│   │   │   ├── 71_siphash
+│   │   │   ├── 72_blum_blum_shub
+│   │   │   ├── 73_keccak-256
+│   │   │   ├── 74_paxos_algorithm
+│   │   │   ├── 75_raft_algorithm
+│   │   │   ├── 76_gossip_protocol
+│   │   │   ├── 77_consistent_hashing
+│   │   │   ├── 78_two-phase_commit_protocol
+│   │   │   ├── 79_proof_of_work
+│   │   │   ├── 80_proof_of_stake
+│   │   │   ├── 81_simulated_annealing
+│   │   │   ├── 82_genetic_algorithms
+│   │   │   ├── 83_ant_colony_optimization
+│   │   │   ├── 84_particle_swarm_optimization
+│   │   │   ├── 85_metropolis-hastings_algorithm
+│   │   │   ├── 86_traveling_salesman_problem_approximation
+│   │   │   ├── 87_shor's_algorithm
+│   │   │   ├── 89_grover's_algorithm
+│   │   │   ├── 90_needleman-wunsch_algorithm
+│   │   │   ├── 91_smith-waterman_algorithm
+│   │   │   ├── 92_viterbi_algorithm
+│   │   │   ├── 93_blast
+│   │   │   ├── 94_monte_carlo_algorithms
+│   │   │   ├── 95_las_vegas_algorithms
+│   │   │   ├── 96_fisher-yates_shuffle
+│   │   │   ├── 97_reservior_sampling
+│   │   │   ├── 98_simplex_algorithm
+│   │   │   ├── 99_hungarian_algorithm
+│   │   │   └── README.md
+│   │   └── README.md
+│   ├── 03_applied_mathematics
+│   ├── README.md
+│   └── articles
+│       └── article_1.ipynb
+└── practicals
+
+201 directories, 9 files
