@@ -75,7 +75,7 @@ This heuristic is inspired by the process of natural selection and evolution.
 
 How it Works: The algorithm maintains a "population" of potential solutions. In each generation, it selects the best-performing solutions, which then "reproduce" (combine) and "mutate" (randomly change) to create new, diverse solutions for the next generation. This process continues until a satisfactory solution is found.
 
-## 2. Implementation Strategies for Querying, Computation, and Navigation
+## 2. Optimization Techniques
 
 ### a. Precomputation
 The strategy of navigating through your data structure in an initial pass to make a new, different, and optimized ADT that you will then use for further processing.

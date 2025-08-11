@@ -1,4 +1,4 @@
-02_data_structures_and_algorithms/
+.
 ├── interview_prep
 ├── notes
 │   ├── 01_data_structures
@@ -207,6 +207,7 @@
 │   ├── README.md
 │   └── articles
 │       └── article_1.ipynb
+├── organization.txt
 └── practicals
 
-201 directories, 9 files
+201 directories, 10 files
