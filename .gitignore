@@ -1,1 +1,5 @@
 _output
+.jupyter
+.jupyterlite.doit.db
+.old
+.ipynb_checkpoints
