@@ -4,16 +4,30 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void insert_at(int position, int value, int *array, int new_length) {
-    int temp = 0;
+int insert_at(
+    int position,
+    int value,
+    int current_length,
+    int total_capacity,
+    int *array
+) {
+    if (current_length >= total_capacity) {
+        printf("Array is saturated.\n");
+        return -1;
+    }
 
-    for(int i = position; i < new_length; i++) {
-        temp = *(array + i + 1);
-        *(array + i + 1) = *(array + i);
-        *(array + i) = temp;
+    if (position < 0 || position >= current_length) {
+        printf("Array position is invalid.\n");
+        return -1;
+    }
+
+    for (int i = current_length - 1; i > position; i--) {
+        array[i + i] = array[i];
     }
 
     array[position] = value;
+
+    return 0;
 }
 
 int main() {
@@ -21,8 +35,12 @@ int main() {
         1, 2, 3, 4, 5, 6, 7, 8
     };
 
-    insert_at(5, 20, array, 9);
+    int result = insert_at(5, 20, 8, 20, array);
 
+    if (result == -1) {
+        printf("Failed to insert into array.");
+        return -1;
+    }
     for (int i = 0; i < 9; i++) {
         printf("%d ", array[i]);
     }
