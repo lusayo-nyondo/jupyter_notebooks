@@ -2,7 +2,7 @@
 
 ## What are data structures?
 
-To properly define a data structure, we need to first talk about where they live when you're using them in your programs and what we do with them.
+To properly define a data structure, we need to first talk about where they live and what we do with them.
 
 As you can imagine, generally, data structures exist within RAM. They're basically a collection of interelated bytes and pointers that are being stored there for your programs to use. These bytes can either be physically right next to each other in a sequence, or they can be in completely distant regions of your RAM. All that matters is that they are modeled in a way that allows us to group related bytes together. The way that you choose to do that is what we're going to refer to as your Storage Model.
 
