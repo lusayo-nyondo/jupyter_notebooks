@@ -1,1 +1,0 @@
-./02_data_structures_and_algorithms/notes/02_algorithms/01_fundamentals/01_navigation
