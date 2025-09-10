@@ -1,7 +1,6 @@
 # Data Structures
 
 ## What are data structures?
-
 To properly define a data structure, we need to first talk about where they live and what we do with them.
 
 As you can imagine, generally, data structures exist within memory locations. They're basically a collection of interelated bytes and pointers that are being stored there for your programs to use. These bytes can either be physically right next to each other in a sequence, or they can be in completely distant regions of your RAM. All that matters is that they are modeled in a way that allows us to group related bytes together. The way that you choose to do that is what we're going to refer to as your Storage Model.
@@ -21,7 +20,6 @@ Indexes refer to a data storage model where related elements of the same type ar
 How does this black magic work? Let's discuss it in the next section.
 
 ### Accessing Elements in an Index
-
 The key to this is that Indexes are predefined to have a fixed size, and each element in the index has to be of the same type, and therefore also has the same size. Locations in your RAM are represented using numbers.
 
 The RAM itself is one big index. It contains millions of slots, each of a fixed size, called a "byte". You can reference a byte using a numerical index. For example, you can ask the RAM to put something in byte number 34, or to retrieve something that's stored in byte number 1037. You can also work with groups of bytes. So you can essentially ask your RAM to put something in byte numbers 500-536, or to retrieve something stored in another range of bytes absolutely anywhere in the RAM.
@@ -124,7 +122,6 @@ For the majority of our study of Data Structures, we'll actually be discussing t
 Like we said, Abstract Data Types typically have logical constraints that are used to constrain their behavior and give them logical properties that are useful for our computations. Let's talk about this a little.
 
 ### Typical Logical Constraints for Abstract Data Types
-
 ADTs impose various constraints on their data. These constraints determine the structure's behavior and define its public interface. There are several approaches one can take to try to classify the logical rules that typically define Abstract Data Types, however, I'm going to focus on the three types of constraints that I feel are prominent:
 
 #### Access Constraints.
