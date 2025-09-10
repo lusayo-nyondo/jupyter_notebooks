@@ -1,22 +1,30 @@
 from collections import deque
-from typing import List, Deque
+from typing import List, Callable, Deque
+
 
 class TreeNode:
     def __init__(
         self,
         value=None,
-        left=None,
-        right=None
+        left: type['TreeNode']=None,
+        right: type['TreeNode']=None,
     ):
         self.left = left
         self.right = right
         self.value = value
 
+
 class BinaryTree:
-    def __init__(self, root: TreeNode=None):
+    def __init__(
+            self,
+            root: TreeNode=None,
+        ):
         self.root = root
     
-    def load_from_array(self, array: List):
+    def load_from_array(
+            self,
+            array: List,
+        ):
         if array is None:
             self.root = None
         
@@ -42,7 +50,11 @@ class BinaryTree:
             
             i += 1
 
-    def in_order_traversal(self, func=print, node: TreeNode=None):
+    def in_order_traversal(
+            self,
+            func: Callable=print,
+            node: TreeNode=None,
+        ):
         if self.root is None:
             return
 
@@ -63,7 +75,11 @@ class BinaryTree:
                 node=node.right,
             )
 
-    def post_order_traversal(self, func=print, node: TreeNode=None):
+    def post_order_traversal(
+            self,
+            func: Callable=print,
+            node: TreeNode=None,
+        ):
         if self.root is None:
             return
 
@@ -85,36 +101,49 @@ class BinaryTree:
         func(node.value)
 
 
-    def pre_order_traversal(self, func, node: TreeNode=None):
+    def pre_order_traversal(
+            self,
+            func: Callable,
+            node: TreeNode=None,
+        ):
         if self.root is None:
             return
-    
+
         if node is None:
             node = self.root
-    
+
         func(node.value)
-        
+
         if node.left:
             self.pre_order_traversal(
                 func=func,
-                node=node.left
+                node=node.left,
             )
-        
+
         if node.right:
             self.pre_order_traversal(
                 func=func,
-                node=node.right
+                node=node.right,
             )
 
 
 class BinarySearchTree(BinaryTree):
-    def __init__(self, root=None):
+    def __init__(
+            self,
+            root: TreeNode=None,
+        ):
         self.root = root
 
-    def insert(self, value):
+    def insert(
+            self,
+            value,
+        ):
         pass
-    
-    def search(self, value):
+
+    def search(
+            self,
+            value,
+        ):
         pass
 
     def pop(self):
@@ -122,13 +151,21 @@ class BinarySearchTree(BinaryTree):
 
 
 class AVLTree(BinaryTree):
-    def __init__(self, root=None):
+    def __init__(
+            self, root: TreeNode=None
+        ):
         self.root = root
 
-    def insert(self, value):
+    def insert(
+            self,
+            value,
+        ):
         pass
 
-    def search(self, value):
+    def search(
+            self,
+            value,
+        ):
         pass
 
     def pop(self):
@@ -136,13 +173,21 @@ class AVLTree(BinaryTree):
 
 
 class RedBlackTree(BinaryTree):
-    def __init__(self, root=None):
+    def __init__(
+            self, root: TreeNode=None
+        ):
         self.root = root
     
-    def insert(self, value):
+    def insert(
+            self,
+            value,
+        ):
         pass
 
-    def search(self, value):
+    def search(
+            self,
+            value,
+        ):
         pass
 
 
@@ -150,24 +195,40 @@ class WeightedGraph:
     def add_node(self, node):
         pass
 
-    def add_edge(self, node_1, node_2):
+    def add_edge(
+            self,
+            node_1,
+            node_2,
+        ):
         pass
 
     def pop_node(self):
         pass
 
-    def remove_edge(self, node_1, node_2):
+    def remove_edge(
+            self,
+            node_1,
+            node_2,
+        ):
         pass
 
 class UnweightedGraph:
     def add_node(self, node):
         pass
 
-    def add_edge(self, node_1, node_2):
+    def add_edge(
+            self,
+            node_1,
+            node_2,
+        ):
         pass
 
     def pop_node(self):
         pass
     
-    def remove_edge(self, node_1, node_2):
+    def remove_edge(
+            self,
+            node_1,
+            node_2,
+        ):
         pass
