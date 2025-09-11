@@ -1,1 +1,0 @@
-./02_data_structures_and_algorithms/notes/01_data_structures/02_case_studies/01_static_arrays/practice
